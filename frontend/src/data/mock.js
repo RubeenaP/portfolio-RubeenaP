@@ -17,7 +17,7 @@ export const mockData = {
       id: 1,
       company: "Agriplast Tech India Pvt Ltd",
       role: "Lead Manager – Sales and Marketing",
-      duration: "2023 - Present",
+      duration: "2025 - Present",
       location: "Hosur, Tamil Nadu",
       responsibilities: [
         "Leading sales team to achieve quarterly and annual revenue targets",
@@ -30,7 +30,7 @@ export const mockData = {
       id: 2,
       company: "Plantix Agritech India Pvt Ltd",
       role: "Key Account Executive",
-      duration: "2022 - 2023",
+      duration: "2024 - 2025",
       location: "Hyderabad, Telangana",
       responsibilities: [
         "Managed key agricultural technology accounts",
@@ -43,7 +43,7 @@ export const mockData = {
       id: 3,
       company: "AgriApp Technologies Pvt Ltd",
       role: "Senior Executive, Crop Advisor",
-      duration: "2021 - 2022",
+      duration: "2022 - 2024",
       location: "Bengaluru, Karnataka",
       responsibilities: [
         "Provided expert crop advisory services to farmers",
