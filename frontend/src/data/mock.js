@@ -58,7 +58,7 @@ export const mockData = {
     {
       id: 1,
       title: "VLE Program Initiative",
-      description: "Innovative program focused on onboarding farmers and students as sales agents, creating a distributed network of agricultural technology advocates.",
+      description: "Innovative program focused on onboarding farmers and students as sales agents, creating a distributed network of agricultural technology advocates. This project was successfully implemented during my tenure at AgriApp Technologies Pvt Ltd.",
       highlights: [
         "Successfully onboarded over 500 farmer-agents",
         "Established training modules for student ambassadors",
@@ -66,7 +66,7 @@ export const mockData = {
         "Improved rural market penetration by 40%"
       ],
       technologies: ["CRM Integration", "Training Platforms", "Performance Analytics"],
-      status: "Ongoing"
+      status: "Completed"
     }
   ],
   
