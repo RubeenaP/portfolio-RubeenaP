@@ -7,7 +7,7 @@ export const mockData = {
     company: "Agriplast Tech India Pvt Ltd",
     email: "prubeena59@gmail.com",
     linkedin: "https://www.linkedin.com/in/rubeena-p?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    profileImage: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwzfHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdHxlbnwwfHx8fDE3NTM0NzE1NDh8MA&ixlib=rb-4.1.0&q=85"
+    profileImage: "https://customer-assets.emergentagent.com/job_agriplast-lead/artifacts/v02jrxnt_WhatsApp%20Image%202025-07-26%20at%2019.31.43_c3c7001a.jpg"
   },
   
   about: "Sales and marketing leader with over 3 years of experience in agri-tech. Specializes in B2B sales, CRM, market strategy, and vendor partnerships. Passionate about tech-driven growth in agriculture.",
