@@ -52,7 +52,6 @@ const Footer = () => {
             <h4 className="text-lg font-semibold">Contact Information</h4>
             <div className="space-y-2 text-gray-400">
               <p>📧 prubeena59@gmail.com</p>
-              <p>📱 6363222216</p>
               <p>📍 India</p>
               <p>💼 Agriplast Tech India Pvt Ltd</p>
             </div>
