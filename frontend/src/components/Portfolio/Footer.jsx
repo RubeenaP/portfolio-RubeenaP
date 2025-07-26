@@ -25,13 +25,6 @@ const Footer = () => {
                 <Mail className="w-5 h-5" />
               </a>
               <a 
-                href="tel:6363222216"
-                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors duration-300"
-                aria-label="Phone"
-              >
-                <Phone className="w-5 h-5" />
-              </a>
-              <a 
                 href="https://www.linkedin.com/in/rubeena-p?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                 target="_blank"
                 rel="noopener noreferrer"
