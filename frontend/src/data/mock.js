@@ -91,10 +91,18 @@ export const mockData = {
   certifications: [
     {
       id: 1,
-      title: "Tractor Training Certificate",
-      institution: "SRFMTTI",
-      year: "2021",
-      description: "Specialized training in agricultural machinery operation"
+      title: "Digital Marketing Certification",
+      institution: "Bizgurukul Pvt. Ltd.",
+      year: "2024",
+      description: "Comprehensive digital marketing certification program",
+      image: "https://customer-assets.emergentagent.com/job_agriplast-lead/artifacts/rpcaysvv_WhatsApp%20Image%202025-07-26%20at%2019.40.12_cfc3b327.jpg"
+    },
+    {
+      id: 2,
+      title: "Excel Mastery",
+      institution: "Bizgurukul",
+      year: "2024",
+      description: "Advanced Excel skills and data analysis certification"
     }
   ],
   
