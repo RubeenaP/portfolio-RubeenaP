@@ -1,9 +1,13 @@
 import React, { useState } from 'react';
-import { Mail, Phone, Linkedin, MapPin, Send, CheckCircle } from 'lucide-react';
+import { Mail, Phone, Linkedin, MapPin, Send, CheckCircle, AlertCircle } from 'lucide-react';
 import { Button } from '../ui/button';
 import { Input } from '../ui/input';
 import { Textarea } from '../ui/textarea';
 import { useToast } from '../../hooks/use-toast';
+import axios from 'axios';
+
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+const API = `${BACKEND_URL}/api`;
 
 const ContactSection = ({ personalData }) => {
   const [formData, setFormData] = useState({
@@ -23,19 +27,92 @@ const ContactSection = ({ personalData }) => {
     }));
   };
 
+  const validateForm = () => {
+    if (!formData.name.trim()) {
+      toast({
+        title: "Validation Error",
+        description: "Please enter your name.",
+        variant: "destructive",
+      });
+      return false;
+    }
+
+    if (!formData.email.trim() || !formData.email.includes('@')) {
+      toast({
+        title: "Validation Error", 
+        description: "Please enter a valid email address.",
+        variant: "destructive",
+      });
+      return false;
+    }
+
+    if (!formData.subject.trim()) {
+      toast({
+        title: "Validation Error",
+        description: "Please enter a subject.",
+        variant: "destructive",
+      });
+      return false;
+    }
+
+    if (!formData.message.trim() || formData.message.trim().length < 10) {
+      toast({
+        title: "Validation Error",
+        description: "Please enter a message with at least 10 characters.",
+        variant: "destructive",
+      });
+      return false;
+    }
+
+    return true;
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+    
+    if (!validateForm()) {
+      return;
+    }
+
     setIsSubmitting(true);
     
-    // Simulate form submission
-    setTimeout(() => {
-      toast({
-        title: "Message sent successfully!",
-        description: "Thank you for reaching out. I'll get back to you soon.",
+    try {
+      const response = await axios.post(`${API}/contact`, {
+        name: formData.name.trim(),
+        email: formData.email.trim(),
+        subject: formData.subject.trim(),
+        message: formData.message.trim()
       });
-      setFormData({ name: '', email: '', subject: '', message: '' });
+
+      if (response.data.success) {
+        toast({
+          title: "Message sent successfully!",
+          description: response.data.message,
+        });
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      } else {
+        throw new Error(response.data.error || 'Failed to send message');
+      }
+      
+    } catch (error) {
+      console.error('Contact form submission error:', error);
+      
+      let errorMessage = "Sorry, there was an error sending your message. Please try again.";
+      
+      if (error.response?.data?.detail) {
+        errorMessage = error.response.data.detail;
+      } else if (error.response?.status === 422) {
+        errorMessage = "Please check your input and try again.";
+      }
+
+      toast({
+        title: "Error sending message",
+        description: errorMessage,
+        variant: "destructive",
+      });
+    } finally {
       setIsSubmitting(false);
-    }, 1500);
+    }
   };
 
   return (
