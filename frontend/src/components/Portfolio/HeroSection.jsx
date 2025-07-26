@@ -36,14 +36,6 @@ const HeroSection = ({ personalData }) => {
               </a>
               
               <a 
-                href={`tel:${personalData.phone}`}
-                className="flex items-center gap-2 px-4 py-2 bg-white rounded-full shadow-md hover:shadow-lg transition-all duration-300 text-gray-700 hover:text-green-700"
-              >
-                <Phone className="w-4 h-4" />
-                <span className="text-sm font-medium">{personalData.phone}</span>
-              </a>
-              
-              <a 
                 href={personalData.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
