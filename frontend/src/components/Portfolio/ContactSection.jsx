@@ -179,7 +179,7 @@ const ContactSection = ({ personalData }) => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900">Location</h4>
-                  <p className="text-gray-600">India</p>
+                  <p className="text-gray-600">Bengaluru, Karnataka, India</p>
                 </div>
               </div>
             </div>
