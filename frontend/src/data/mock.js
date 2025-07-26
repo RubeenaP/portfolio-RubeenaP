@@ -6,7 +6,6 @@ export const mockData = {
     role: "Lead Manager – Sales and Marketing",
     company: "Agriplast Tech India Pvt Ltd",
     email: "prubeena59@gmail.com",
-    phone: "6363222216",
     linkedin: "https://www.linkedin.com/in/rubeena-p?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     profileImage: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwzfHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdHxlbnwwfHx8fDE3NTM0NzE1NDh8MA&ixlib=rb-4.1.0&q=85"
   },
