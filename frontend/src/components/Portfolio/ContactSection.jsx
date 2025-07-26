@@ -82,19 +82,6 @@ const ContactSection = ({ personalData }) => {
               </a>
               
               <a 
-                href={`tel:${personalData.phone}`}
-                className="flex items-center gap-4 p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:transform hover:scale-105"
-              >
-                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                  <Phone className="w-6 h-6 text-blue-600" />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900">Phone</h4>
-                  <p className="text-gray-600">{personalData.phone}</p>
-                </div>
-              </a>
-              
-              <a 
                 href={personalData.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
