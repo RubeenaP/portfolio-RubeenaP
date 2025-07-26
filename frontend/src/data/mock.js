@@ -108,7 +108,7 @@ export const mockData = {
   
   languages: [
     { language: "English", proficiency: "Fluent" },
-    { language: "Kannada", proficiency: "Native" },
+    { language: "Kannada", proficiency: "Fluent" },
     { language: "Hindi", proficiency: "Fluent" },
     { language: "Telugu", proficiency: "Conversational" }
   ]
