@@ -49,6 +49,15 @@ const EducationSection = ({ education, certifications, languages }) => {
             <div className="space-y-6">
               {certifications.map((cert) => (
                 <div key={cert.id} className="bg-white rounded-xl p-6 shadow-md">
+                  {cert.image && (
+                    <div className="mb-4">
+                      <img 
+                        src={cert.image} 
+                        alt={cert.title}
+                        className="w-full max-w-sm mx-auto rounded-lg shadow-md"
+                      />
+                    </div>
+                  )}
                   <h4 className="font-semibold text-lg text-gray-900 mb-2">{cert.title}</h4>
                   <p className="text-blue-700 font-medium mb-2">{cert.institution}</p>
                   <p className="text-sm text-gray-600 mb-2">{cert.year}</p>
